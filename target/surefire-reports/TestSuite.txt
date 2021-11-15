@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 143.012 s <<< FAILURE! - in TestSuite
+pack1.CrossBrowser.setup[chrome](0)  Time elapsed: 78.644 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q710H6J', ip: '192.168.43.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00FB06F3+2492147]
+	Ordinal0 [0x00F49BD1+2071505]
+	Ordinal0 [0x00E52340+1057600]
+	Ordinal0 [0x00E4739D+1012637]
+	Ordinal0 [0x00E6FF64+1179492]
+	Ordinal0 [0x00E6C43B+1164347]
+	Ordinal0 [0x00E69C9F+1154207]
+	Ordinal0 [0x00E99DFF+1351167]
+	Ordinal0 [0x00E99A6A+1350250]
+	Ordinal0 [0x00E9568B+1332875]
+	Ordinal0 [0x00E721D4+1188308]
+	Ordinal0 [0x00E7302F+1191983]
+	GetHandleVerifier [0x011367A6+1545030]
+	GetHandleVerifier [0x011E105C+2243580]
+	GetHandleVerifier [0x0103BC97+518199]
+	GetHandleVerifier [0x0103AD80+514336]
+	Ordinal0 [0x00F4ED2D+2092333]
+	Ordinal0 [0x00F52EE8+2109160]
+	Ordinal0 [0x00F53022+2109474]
+	Ordinal0 [0x00F5CB71+2149233]
+	BaseThreadInitThunk [0x770B6359+25]
+	RtlGetAppContainerNamedObjectPath [0x771F7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x771F7B44+180]
+
+	at pack1.CrossBrowser.setup(CrossBrowser.java:24)
+
+pack1.CrossBrowser.setup[firefox](0)  Time elapsed: 62.415 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q710H6J', ip: '192.168.43.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at pack1.CrossBrowser.setup(CrossBrowser.java:19)
+
